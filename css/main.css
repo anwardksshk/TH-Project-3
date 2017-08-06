@@ -93,6 +93,8 @@ textarea {
   color: #323232;
   font-style: normal;
   border: 2px solid transparent;
+  transition: border .4s, background-color .3s ease-out;
+
 }
 
 textarea  {
@@ -107,6 +109,7 @@ select[id="state"]:focus,
 textarea:focus{
   border: 2px solid #002F2E;
   outline-width: 0; /* removes border highlight */
+  background-color: #C8CDCD;
 }
 
 select[id="state"]{
@@ -153,10 +156,12 @@ BUTTON
   border-radius: 10px;
   border: none;
   box-shadow: inset 0px 0px 0 4px rgba(0,0,0,.05);
+
+  transition: opacity .5s;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.7;
 }
 
 .btn:active {
