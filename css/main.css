@@ -1,0 +1,210 @@
+/**********************
+GENERAL
+**********************/
+
+* {
+  font-family: 'Merriweather', serif;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+h2  {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+label,
+p, footer {
+  color: #002F0B;
+  font-weight: lighter;
+  font-size: .9em;
+}
+
+/**********************
+HEADER
+**********************/
+
+header {
+  width: 100%;
+  padding: 5px;
+  background-color: #002F2E;
+}
+
+#top{
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.intro {
+  text-align: center;
+  padding: 5px;
+  margin: 6px;
+  color: #002F2E;
+  border-bottom: 4px solid #002F2E;
+}
+
+/**********************
+FORM
+**********************/
+.wrapper  {
+  border-top: 2px solid;
+  margin: 6px 6px;
+}
+
+.form-signup  {
+  padding: 5px 10px 10px;
+}
+
+label {
+    display: inline-block;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+hr {
+  border-top: 2px solid #002F2E;
+}
+
+fieldset legend {
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select[id="state"],
+textarea {
+  background-color: #e8eeef;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 15px;
+  height: 52px;
+  width: 100%;
+  color: #323232;
+  font-style: normal;
+  border: 2px solid transparent;
+}
+
+textarea  {
+  height: 100px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type=""]:focus,
+select[id="state"]:focus,
+textarea:focus{
+  border: 2px solid #002F2E;
+  outline-width: 0; /* removes border highlight */
+}
+
+select[id="state"]{
+  height: 48px;
+}
+
+input[required]:invalid{
+  border: 2px solid #F08080;
+}
+
+#zip-code {
+  display: block;
+  width: 50vw;
+}
+
+input[required]:placeholder-shown  {
+  text-align: right;
+  font-weight: lighter;
+  font-size: .8em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: 15px 10px 15px 0;
+}
+
+.newsletter p {
+  margin-top: 15px;
+  margin-bottom: 5px ;
+}
+
+/**********************
+BUTTON
+**********************/
+
+.btn {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: #20B2AA;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: inset 0px 0px 0 4px rgba(0,0,0,.05);
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn:active {
+  opacity: 1;
+  box-shadow: inset 0px 0px 0 4px rgba(0,0,0,.08);
+}
+
+/**********************
+FOOTER
+**********************/
+footer {
+  text-align: center;
+  font-size: .8em;
+  font-style: italic;
+  margin: 15px;
+  color: gray;
+}
+
+/**********************
+MEDIA QUERIES
+**********************/
+@media (min-width: 768px) {
+  .intro, .wrapper, footer {
+    max-width: 800px;
+    margin-left: 20%;
+    margin-right:20%;
+  }
+
+  .contact-info label {
+    display: inline-block;
+    margin: 2%;
+    width: 30%;
+
+  }
+
+  .contact-info input, .contact-info select {
+    margin: 2%;
+    width: 60%;
+  }
+
+  #zip-code{
+    display: inline-block;
+    margin: 2%;
+    width: 30%;
+  }
+
+  hr  {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+}
